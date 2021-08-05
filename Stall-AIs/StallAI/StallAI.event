@@ -5,8 +5,8 @@
 
 // Use these to set your AI
 // change AI3 if you like heal AI
-#define StallAI(turns) ([0x00, (RecursiveAIStart-2+(turns)), 0x04, 0x00])
-#define StallAI2(turns) ([0x00, (RecursiveAIStart-2+(turns))])
+#define StallAI(turns) [0x00, (RecursiveAIStart-2+(turns)), 0x04, 0x00]
+#define StallAI2(turns) [0x00, (RecursiveAIStart-2+(turns))]
 
 #define _AI_NOP "SHORT 0x000E 0x00FF 0x0000 0x0000 0x0000 0x0000 0x0000 0x0000"
 #define _CHANGE_AI2_TO(ID) "SHORT 0xFF02 ID 0x0000 0x0000 0x0000 0x0000 0x0000 0x0000"
